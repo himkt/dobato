@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "discord_webhook"
+name = "dobato"
 version = "0.1.0"
 description = ""
 authors = ["himkt <himkt@klis.tsukuba.ac.jp>"]
