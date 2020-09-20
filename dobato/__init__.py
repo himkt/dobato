@@ -1,1 +1,1 @@
-from dobato import notify  # NOQA
+from dobato import notifier  # NOQA
