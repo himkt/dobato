@@ -1,1 +1,2 @@
-from dobato import notifier  # NOQA
+from dobato.dobato import notify_fn
+from dobato import notify_fn  # noqa
