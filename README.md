@@ -3,30 +3,33 @@
 [Dobato (堂鳩)](https://www.suntory.co.jp/eco/birds/encyclopedia/detail/4642.html)
 is a simple tool to send a message to slack/discord.
 
-### Preparation
-
-Create `.discord` on your HOME directory.
-
-```bash
-> cat $HOME/.discord
-https://discordapp.com/api/webhooks/xxxxxxxxxxxx/yyyyyyyyyyyyyyyyyyyyyyyyy
-```
 
 ### Install
 
-`pip install .`
+`pip install dobato`
 
-### From shell
+
+### Configure discord webhook
+
+Run `python -m dobato setup`.
 
 ```bash
-python3 -m dobato.notify --text "hello, world"
+> poetry run python -m dobato setup
+Discord webhook url: https://example.com/webhook
 ```
 
-### From script
+
+### Notify as a command
+
+```bash
+python3 -m dobato notify "Hello, World."
+```
+
+
+### Using dobato in a Python script
 
 ```python
-from dobato import notify
+from dobato import notify_fn
 
-
-notify.notify("sample from script", dry_run=False)
+notify_fn("text")
 ```
