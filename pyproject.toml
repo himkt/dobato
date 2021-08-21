@@ -1,11 +1,11 @@
 [tool.poetry]
 name = "dobato"
-version = "0.1.0"
-description = ""
+version = "1.0.0"
+description = "Simple tool for discord BOT"
 authors = ["himkt <himkt@klis.tsukuba.ac.jp>"]
 
 [tool.poetry.dependencies]
-python = "^3.5"
+python = "^3.6"
 
 [tool.poetry.dev-dependencies]
 mypy = "^0.782"
